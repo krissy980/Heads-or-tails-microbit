@@ -1,6 +1,9 @@
 
 > Open this page at [https://krissy980.github.io/heads-or-tails-microbit/](https://krissy980.github.io/heads-or-tails-microbit/)
 
+## How to use
+Shake the microbit for it to flip, press b to see who is winning.
+
 ## Use as Extension
 
 This repository can be added as an **extension** in MakeCode.
