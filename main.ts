@@ -75,3 +75,4 @@ let Tails_Wins = 0
 music._playDefaultBackground(music.builtInPlayableMelody(Melodies.Prelude), music.PlaybackMode.LoopingInBackground)
 Tails_Wins = 0
 Heads_Wins = 0
+basic.showString("Shake to play!")
