@@ -1,4 +1,13 @@
-input.onButtonPressed(Button.A, function () {
+input.onButtonPressed(Button.B, function () {
+    if (Heads_Wins > Tails_Wins) {
+        basic.showString("Heads won")
+    } else if (Heads_Wins < Tails_Wins) {
+        basic.showString("Tails won")
+    } else {
+        basic.showString("Draw")
+    }
+})
+input.onGesture(Gesture.Shake, function () {
     basic.showLeds(`
         . # # # .
         # . . . #
@@ -61,16 +70,8 @@ input.onButtonPressed(Button.A, function () {
         Tails_Wins += 1
     }
 })
-input.onButtonPressed(Button.B, function () {
-    if (Heads_Wins > Tails_Wins) {
-        basic.showString("Heads won")
-    } else if (Heads_Wins < Tails_Wins) {
-        basic.showString("Tails won")
-    } else {
-        basic.showString("Draw")
-    }
-})
 let Heads_Wins = 0
 let Tails_Wins = 0
+music._playDefaultBackground(music.builtInPlayableMelody(Melodies.Prelude), music.PlaybackMode.LoopingInBackground)
 Tails_Wins = 0
 Heads_Wins = 0
