@@ -1,0 +1,49 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="Tf^r(K/ZC9,5Gjkd6TsN">Heads Wins</variable><variable id="MU$qnG%jtlW9b_S~ju8J">Tails Wins</variable></variables><block type="device_button_event" id="2Rii.3{X9@0|Ckx[3F=Y" x="0" y="0"><field name="NAME">Button.A</field><statement name="HANDLER"><block type="device_show_leds" id="tZCI+C]GoaoNkV)n~fxZ"><field name="LEDS">`
+        . # # # . 
+        # . . . # 
+        # . . . # 
+        # . . . # 
+        . # # # .
+        `</field><next><block type="device_show_leds" id="b{lA+vxR.4#*xtXH[RnK"><field name="LEDS">`
+        . . . . . 
+        # # # # # 
+        # . . . # 
+        # # # # # 
+        . . . . .
+        `</field><next><block type="device_show_leds" id="l:j[$TP(;tjK)k4tLW2}"><field name="LEDS">`
+        . . . . . 
+        . . . . . 
+        # # # # # 
+        . . . . . 
+        . . . . .
+        `</field><next><block type="device_show_leds" id="MAFxq~DHBvyTGYEe*tzF"><field name="LEDS">`
+        . . . . . 
+        # # # # # 
+        # . . . # 
+        # # # # # 
+        . . . . .
+        `</field><next><block type="device_show_leds" id=".T^veaQkh^=v;H.5ElVo"><field name="LEDS">`
+        . # # # . 
+        # . . . # 
+        # . . . # 
+        # . . . # 
+        . # # # .
+        `</field><next><block type="device_show_leds" id="Q5nLu.YHVUui75SiMQb$"><field name="LEDS">`
+        # . . . # 
+        . . . . . 
+        . . . . . 
+        . . . . . 
+        # . . . #
+        `</field><next><block type="controls_if" id="zh`13D:([8|ED36R,$Xk"><mutation else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_random" id="GYwlV#6HSJBcugk4jA=9"></block></value><statement name="DO0"><block type="device_show_leds" id="G1GW=p.]08suX@)8dX)8"><field name="LEDS">`
+        # . . . # 
+        # . . . # 
+        # # # # # 
+        # . . . # 
+        # . . . #
+        `</field><next><block type="variables_change" id="11A{Bv-=IHk-kBaB^1HZ"><field name="VAR" id="Tf^r(K/ZC9,5Gjkd6TsN">Heads Wins</field><value name="VALUE"><shadow type="math_number" id="+(0tu9+IZo,PpAT2Z[-$"><field name="NUM">1</field></shadow></value></block></next></block></statement><statement name="ELSE"><block type="device_show_leds" id="KF!QptFNQfrem5nK/EBi"><field name="LEDS">`
+        # # # # # 
+        . . # . . 
+        . . # . . 
+        . . # . . 
+        . . # . .
+        `</field><next><block type="variables_change" id=")J;1o%QK0KPM^9_0h=C["><field name="VAR" id="MU$qnG%jtlW9b_S~ju8J">Tails Wins</field><value name="VALUE"><shadow type="math_number" id="epjo`mi@8`7)4KO0@=!6"><field name="NUM">1</field></shadow></value></block></next></block></statement></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="device_button_event" id="`qnpI(73{0.K5qmyngYG" x="208" y="2240"><field name="NAME">Button.B</field><statement name="HANDLER"><block type="controls_if" id=":sF`X^OJ{RDbW:]EbF90"><mutation elseif="1" else="1"></mutation><value name="IF0"><shadow type="logic_boolean"><field name="BOOL">TRUE</field></shadow><block type="logic_compare" id="6RZE1kVSQ.YG?hc5[Ksp"><field name="OP">GT</field><value name="A"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="variables_get" id="pAzZE6^oO!G#JqZop9hK"><field name="VAR" id="Tf^r(K/ZC9,5Gjkd6TsN">Heads Wins</field></block></value><value name="B"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="variables_get" id="mn~,b/1n]K08n,?Lv1U~"><field name="VAR" id="MU$qnG%jtlW9b_S~ju8J">Tails Wins</field></block></value></block></value><statement name="DO0"><block type="device_print_message" id="}HH;BT}Iwqcj^r]xmv`Q"><value name="text"><shadow type="text" id="l))!|;t~P)FcD^+NTf#4"><field name="TEXT">Heads won</field></shadow></value></block></statement><value name="IF1"><block type="logic_compare" id="K|:cbY_yR^JuWSOC9gPu"><field name="OP">LT</field><value name="A"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="variables_get" id="AT8ZmdZF9Tb1_UEV]K02"><field name="VAR" id="Tf^r(K/ZC9,5Gjkd6TsN">Heads Wins</field></block></value><value name="B"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="variables_get" id=":Amyv(gk;7|xr-/R^^We"><field name="VAR" id="MU$qnG%jtlW9b_S~ju8J">Tails Wins</field></block></value></block></value><statement name="DO1"><block type="device_print_message" id="(eIQnEax?-1kn%#n%b:m"><value name="text"><shadow type="text" id=")`?o?c04eC[#`l+Grb7}"><field name="TEXT">Tails won</field></shadow></value></block></statement><statement name="ELSE"><block type="device_print_message" id="B$qVb~vSbSOKn%Wr}Ovn"><value name="text"><shadow type="text" id="bU#Z%W(Aq0ohzS~!kA|;"><field name="TEXT">Draw</field></shadow></value></block></statement></block></statement></block></xml>
