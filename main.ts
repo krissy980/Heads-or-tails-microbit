@@ -1,5 +1,3 @@
-let Heads_Wins = 0
-let Tails_Wins = 0
 input.onButtonPressed(Button.A, function () {
     basic.showLeds(`
         . # # # .
@@ -72,3 +70,7 @@ input.onButtonPressed(Button.B, function () {
         basic.showString("Draw")
     }
 })
+let Heads_Wins = 0
+let Tails_Wins = 0
+Tails_Wins = 0
+Heads_Wins = 0
